@@ -1,0 +1,121 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  /* color: #343a40; */
+  color: #000;
+}
+.container {
+  width: 960px;
+  margin: 0 auto;
+  border-bottom: 4px solid #c92a2a;
+}
+header {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+.links {
+  display: flex;
+  gap: 20px;
+}
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
+  /* letter-spacing: -0.5px; */
+}
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  margin-right: 24px;
+  color: #fff;
+  display: inline-block;
+  padding: 24px;
+  background-color: #c92a2a;
+  border-radius: 12px;
+  font-weight: bold;
+}
+.btn:hover,
+.btn:active {
+  background-color: #f03e3e;
+}
+.logo {
+  font-weight: 700;
+  color: #000;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/blake-wisz-Xn5FbEM9564-unsplash.jpg);
+  background-size: cover;
+  padding: 20px;
+  column-gap: 40px;
+  background-size: cover;
+  border-radius: 12px;
+  margin-bottom: 80px;
+}
+.main-title {
+  margin-bottom: 24px;
+  font-size: 32px;
+  letter-spacing: -0.5px;
+}
+.main-text {
+  margin-bottom: 48px;
+}
+.welcome {
+  margin-left: 32px;
+  color: #fff;
+}
+.account-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 60px;
+}
+.account-cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.card-time {
+  height: 20px;
+  width: 20px;
+  stroke: #c92a2a;
+}
+.card-accounts {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.card-title {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.main-card {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.336);
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 128px;
+}
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #000;
+}
